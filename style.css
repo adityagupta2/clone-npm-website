@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arimo", sans-serif;
+}
+
+p {
+    font-weight: 400;
+}
+
+h2, h3 {
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 100px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+#logo {
+    background:#231f20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80px;
+}
+
+#logo a {
+    color: white;
+    align-items: center;
+    display: flex;
+}
+
+#logo span {
+    padding: 5px 10px;
+    font-size: 25px;
+}
+
+.npm-logo {
+    width: 60px;
+    display: flex;
+    padding: 5px;
+}
+
+.github-logo {
+    width: 32px;
+    background-color: white;
+    border-radius: 60%;
+}
+
+#navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 1em;
+    border-width: 10px;
+}
+
+.heart {
+    height: 20px;;
+}
+
+#navigation div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+#navigation div span {
+    font-weight: thin;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+nav ul a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    padding: 15px;
+}
+
+nav ul a:hover {
+    color: rgb(173, 173, 189);
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+#search img {
+    height: 40px;
+    width: 85px;
+    align-items: center;
+    padding: 15px;
+}
+
+.search-part, .login-buttons {
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+.search-part {
+    margin: 10px 30px;
+    height: 50px;
+    width: 950px;
+    background-color: #f2f2f2;
+}
+
+.s-box {
+    width: 800px;
+    align-self: center;
+    border: none;
+    line-height: 1;
+    background-color: #f2f2f2;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.s-button {
+    background-color: black;
+    width: 120px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.login-buttons input {
+    width: 90px;
+}
+
+.sign-up, .sign-in {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.sign-up {
+    background-color: white;
+    border-color: grey;
+    border-width: 1px;
+    height: 50px;
+    margin: 10px;
+}
+
+.sign-in {
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+#home {
+    background-image: url(./assets/b1.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px 50px;
+}
+
+#home h3{
+    font-weight: bolder;
+    color: white;
+}
+
+#home p {
+    color: white;
+    line-height: 1.5em;
+    padding: 30px;
+}
+
+.sign-up-button, .learn-about-pro {
+    height: 50px;
+    width: 200px;
+    font-size: 1em;
+    margin: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sign-up-button {
+    background-color: #c12127;
+    border-bottom: solid 5px #fa8717;
+}
+
+.learn-about-pro {
+    background-color: #e81aa8;
+    border-bottom: solid 5px #b30ad2;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    margin: 20px;
+}
+
+#about h3 {
+    color: #333333;
+    font-weight: 600;
+}
+
+#about * {
+    padding: 10px;
+}
+
+#about p {
+    line-height: 1.5em;
+    font-weight: lighter;
+    color: #262426;
+}
+
+#npm-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 350px;
+}
+
+#npm-list .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px 10px 30px 10px;
+}
+
+#npm-list img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+#npm-list span, p {
+    margin: 10px 0;
+}
+
+#npm-list span {
+    font-weight: 600;
+    color: #333333;
+    font-size: 1em;
+}
+
+#npm-list p {
+    font-size: 0.85em;
+    margin-bottom: 2em;
+    color: #333333;
+    line-height: 1.5em;
+}
+
+.icon a {
+    text-decoration: none;
+    padding: 0.2em;
+}
+
+.learn-button {
+    font-weight: 900;
+    border-radius: 40px;
+    border-width: 1px;
+    padding: 1em;
+    width: 180px;
+    text-transform: uppercase;
+    border-color: black;
+    letter-spacing: 1.5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#open-source, #company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 45px 25px;
+}
+
+#open-source {
+    background-image: url(./assets/background.png);
+    color: white;
+    margin-bottom: 25px;
+}
+
+#open-source h2 {
+    font-size: 3em;
+    margin: 10px;
+}
+
+#open-source {
+    line-height: 1.5em;
+}
+
+#company h2 {
+    color: #333333;
+    font-size: 2.2em;
+    line-height: 1.3em;
+}
+
+#company img {
+    width: 500px;
+    align-self: center;
+    padding: 4em;
+}
+
+
+#footer {
+    border-bottom: solid;
+    border-width: 10px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer-image img {
+    width: 50px;
+    border: 5px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.list * {
+    padding-right: 50px;
+}
+
+#footer span {
+    color: #333333;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+#footer ul {
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+#footer ul li {
+    list-style: none;
+    color: #333333;
+    font-family: "Arimo", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+}
+
+#footer li a {
+    text-decoration: none;
+    font-family: "Arimo", sans-serif;
+    font-weight: 400;
+    line-height: 2.5em;
+    color: #333333;
+}
